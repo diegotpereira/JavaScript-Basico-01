@@ -8,7 +8,66 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="gerarTabela()">
+
+    <pre>
+        <form name="form1" onSubmit="alert('Formulário Enviado')">
+
+            <!-- EVENTO ONMOUSEOVER -->
+            <label for="">EVENTO ONMOUSEOVER</label>
+            <a href="https://github.com/diegotpereira" onmouseover="defaultStatus='Olhe para a barra de Status'; return true">DTP SOftware</a><br>
+
+            <!-- EVENTO ONMOUSEOUT -->
+            <label for="">EVENTO ONMOUSEOUT</label>
+            <a href="https://github.com/diegotpereira" onmouseout="defaultStatus='Olhe para a barra de Status'; return true">DTP SOftware</a><br>
+
+            <label for="">JANELA EM MOVIMENTO</label>
+            <a href="https://github.com/" onClick="expandingWindow('https://github.com/diegotpereira/');return false;">Abra github!</a>
+
+            <!-- Adicionar aos Favoritos -->
+            <label for="">Adicionar aos Favoritos</label>
+            <input type="button" value="Favoritos" onclick="Favoritos()">
+
+            <!-- Chamando a Primeira Função -->
+            <label for="">Primeira Função Simples</label>
+            <input type="button" value="Clique aqui!" onClick="primeiraFuncao()">
+
+            <!-- Função Alert  -->
+            <input type="button" value="Exemplo!" onClick="exemplo()">
+
+            <!-- EVENTO ONCHANGE  -->
+            <label for="">EVENTO ONCHANGE</label>
+            <input type="text" name="campo2" id="" onchange="alert('testando')">
+
+            <!-- EVENTO ONCLICK -->
+            <label for="">EVENTO ONCHANGE</label>
+            <input type="button" name="botao" value="Envia" onClick="alert('Obrigado pelos Dados')"> 
+
+            <!-- EVENTO ONBLUR  -->
+            <label for="">EVENTO ONBLUR</label>
+            <Label>Digite seu nome</Label>
+            <input type="text" name="campo1" id="" onblur="testeONBLUR()">
+
+            <label>Digite seu nome: </label>
+            <input type="text"  name="campo1" onBlur="teste()" onFocus= "alert ('Digite seu nome completo')" />
+
+            <label for="">CONDIÇÃO ISNAN</label>
+            <label for="">Digite um valor qualquer:</label>
+            <input type="text" name="value" onBlur="condicaoISNAN(this.value)"> 
+            
+
+            <!-- EVENTO ONSELECT  -->
+            <label for="">EVENTO ONSELECT</label>
+            <label for="">Digite seu nome: </label>
+            <input type="text" name="campo1" onselect="alert('O Usuário selecionou ' + this.value)" />
+
+            <!-- EVENTO ONSUBMIT  -->
+            <label for="">EVENTO ONSUBMIT </label>
+            <input type="submit" value="Enviar">
+
+            
+        </form>
+    </pre>
     <!-- <script src="js/estruturasdeControle.js"></script> -->
     <!-- <script src="js/switch.js"></script> -->
     <!-- <script src="js/while.js"></script> -->
